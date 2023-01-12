@@ -1,0 +1,138 @@
+:root {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    text-align: right ;
+    height: 10rem;
+    background-image: url(./images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+}
+
+header h1 {
+    padding-right: 1.3rem;
+    float: right;
+}
+main {
+    margin-top: 11rem;
+    }
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+a[target="blank"]::after{
+    font-family: FontAwesome;
+    content: \f35d;
+}
+
+.description, .information, .contact {
+    margin: 1rem;
+}
+
+.product-card {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.product-card p {
+    padding: .5rem;
+}
+
+.product-card, .product-card p {
+    border-top: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.products img {
+    width: 15rem;
+    height: 10rem;
+    padding: .5rem;
+}
+
+.products h2 {
+    text-align: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+}
+
+th, td {
+    padding: .5rem;
+    text-align: center;
+}
+th{
+    border: 1px solid gray;
+}
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color: rgb(197, 191, 191);
+}
+
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form h4, h3 {
+    margin: 0.7rem 0 0.2rem 0;
+}
+
+input, textarea, .submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.submit-btn {
+    width: 10rem;
+    margin-top: 0.5rem;
+    background: none;
+}
+input:focus, textarea:focus {
+    outline: 2px solid  lightblue;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.32);
+    height: 15rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.8rem;
+
+
+}@media(min-width: 768px){
+    .cards{
+
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+}
